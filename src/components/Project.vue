@@ -41,8 +41,11 @@ export default {
                 <p class="card-text">Descrizione: {{ project.description }}</p>
                 <p class="card-text">Contenuto: {{ project.content }}</p>
                 <p class="card-text">Tipologia: {{ project.type?.name }}</p>
-                <div class="d-flex " v-for="technology in project.technologies" :key="technology.id">
-                    <span :style="{ backgroundColor: technology.color }" class="badge p-2">{{ technology.name }}</span>
+                <div class="d-flex">
+                    <div class="d-flex m-1" v-for="technology in project.technologies" :key="technology.id">
+                        <span :style="{ backgroundColor: technology.color }" class="badge p-2">{{ technology.name
+                            }}</span>
+                    </div>
                 </div>
             </div>
         </div>
