@@ -1,0 +1,3 @@
+<template>
+    Prtova singola
+</template>

@@ -3,6 +3,7 @@ import Home from './pages/Home.vue';
 import Aboutus from './pages/Aboutus.vue'
 import ListProjects from './pages/ListProjects.vue'
 import NotFound from './components/NotFound.vue'
+import Project  from './components/Project.vue'
 
 const router= createRouter({
     history: createWebHistory(),
@@ -18,9 +19,14 @@ const router= createRouter({
             component: Aboutus 
         },
         {
-            path: '/listtrojects',
+            path: '/listprojects',
             name: 'listprojects',
             component: ListProjects 
+        },
+        {
+            path: '/project/:slug',
+            name: 'project',
+            component: Project 
         },
         {
             path: '/:catchAll(.*)', 
